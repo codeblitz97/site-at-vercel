@@ -1,0 +1,127 @@
+.error-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 90px);
+  background: rgba(0, 0, 0, 0.8);
+  flex-direction: column;
+  padding: 6px;
+}
+.error-page .error-background h1{
+  font-size: 450px;
+  opacity: .1;
+}
+.error-texts{
+  display: flex;
+  text-align: center;
+  position: absolute;
+  flex-direction: column;
+}
+.error-texts .top-error-heading{
+  font-size: 20px;
+  font-weight: 600;
+}
+.error-texts .top-error-heading span{
+  color: var(--button-color);
+}
+.error-texts .error-description{
+  font-size: 30px;
+  font-weight: 600;
+}
+.error-texts .bottom-error-heading{
+  font-size: 17px;
+  font-weight: 600;
+}
+.error-texts button{
+  background: transparent;
+  outline: none;
+  border:2px solid var(--button-color);
+  padding: 17px;
+  width: 60%;
+  margin: 1.3rem auto;
+  border-radius: 8px;
+  transition: .3s all ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+.error-texts button:hover{
+  background: var(--button-color);
+}
+
+@media(max-width:940px){
+  .error-page .error-background h1{
+    font-size: 300px;
+  }
+  
+}
+@media(max-width:650px){
+  .error-page .error-background h1{
+    font-size: 250px;
+  }
+  .error-texts .top-error-heading{
+    font-size: 20px;
+  }
+  .error-texts .error-description{
+    font-size: 25px;
+  }
+  .error-texts .bottom-error-heading{
+    font-size: 13px;
+  }
+}
+@media(max-width:480px){
+  .error-page{
+    height: 90vh;
+  }
+  .error-page .error-background h1{
+    font-size: 180px;
+  }
+  .error-texts .top-error-heading{
+    font-size: 14px;
+  }
+  .error-texts .error-description{
+    font-size: 20px;
+  }
+  .error-texts .bottom-error-heading{
+    font-size: 13px;
+  }
+  .error-texts button{
+    font-size: 12px;
+  }
+}
+
+@media(max-width:400px){
+  .error-page .error-background h1{
+    font-size: 130px;
+  }
+  .error-texts .top-error-heading{
+    font-size: 12px;
+  }
+  .error-texts .error-description{
+    font-size: 16px;
+  }
+  .error-texts .bottom-error-heading{
+    font-size: 11px;
+  }
+  .error-texts button{
+    font-size: 10px;
+  }
+}
+@media(max-width:350px){
+  .error-page .error-background h1{
+    font-size: 130px;
+  }
+  .error-texts .top-error-heading{
+    font-size: 13px;
+  }
+  .error-texts .error-description{
+    font-size: 15px;
+  }
+  .error-texts .bottom-error-heading{
+    font-size: 10px;
+  }
+  .error-texts button{
+    font-size: 10px;
+    width: 90%;
+  }
+}

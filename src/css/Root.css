@@ -1,0 +1,30 @@
+:root {
+  --background-color: hsl(300, 26%, 7%);
+  --button-color: rgb(214, 34, 136);
+  --scroll-bar: rgb(214, 34, 136);
+  --footer-heading: rgb(214, 34, 136);
+  --episode-button-color: rgb(152, 51, 154);
+  --stream-background-color: rgb(39, 18, 40);
+  --episode-note-color: rgb(191, 69, 157);
+  --upcoming-season-background: #32162b;
+  --chatbot-chat: rgb(214, 34, 136, 70%);
+  --card-background: #32162b;
+  --search-background: #32162b;
+  --account-login-background: #32162b;
+  --episode-summary: #32162b;
+  --image-search-url: #32162b;
+  --footer-social-btn: #32162b;
+  --airing-shedule-background: #32162b;
+  --airing-shedule-btn: rgb(0, 0, 0, 0.3);
+  --text-color: #fff;
+  --bookmark-bg: #000;
+  --image-search-delete: #000;
+  --image-search-another-image: #000;
+  --footer-bg: #000;
+  --comment-bg: rgb(49, 32, 50);
+  --login-bg: hsl(295, 47%, 20%);
+  --genre-filer-bar: hsl(298, 39%, 14%);
+  --genre-background: #32162b;
+  --top-scroll-btn: hsl(315, 39%, 14%);
+  --upcoming-season-bg: #32162b;
+}
