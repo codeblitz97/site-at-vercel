@@ -13,8 +13,8 @@ import Cookies from 'js-cookie';
 import { Link } from 'react-router-dom';
 const Header = forwardRef((props, ref) => {
   const [togglemenu, setToggleMenu] = useState(true);
-
   const [searchActive, setSearchActive] = useState(false);
+  const [placeholder, setPlaceholder] = useState("I'm looking for...");
   const [profileActive, setProfileActive] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
@@ -24,6 +24,30 @@ const Header = forwardRef((props, ref) => {
 
   const navigate = useNavigate();
   let menuRef = useRef();
+
+  const placeholderOptions = [
+    "I'm looking for...",
+    'High School DXD...',
+    'Demon Slayer...',
+    'Tokyo Revengers...',
+    'Naruto Shippuden...',
+    'One Piece...',
+    'Tokyo Ghoul...',
+    'Your Name...',
+    'Weathering With You...',
+    'Darling In The...',
+    'Re: Zero...',
+    'Attack On Titan...',
+  ];
+
+  const getRandomPlaceholder = () => {
+    const randomIndex = Math.floor(Math.random() * placeholderOptions.length);
+    return placeholderOptions[randomIndex];
+  };
+
+  useEffect(() => {
+    setPlaceholder(getRandomPlaceholder());
+  }, []);
 
   useEffect(() => {
     let handler = (e) => {
@@ -182,12 +206,6 @@ const Header = forwardRef((props, ref) => {
             </NavLink>
           </li> */}
           <li>
-            <NavLink to={'/ai-chat'} onClick={() => closeMenuWhenClickedLink()}>
-              ChatterBox
-            </NavLink>
-          </li>
-
-          <li>
             <NavLink
               to={'/image-search'}
               onClick={() => closeMenuWhenClickedLink()}
@@ -200,8 +218,7 @@ const Header = forwardRef((props, ref) => {
           <input
             type="text"
             className="navbar-form-search"
-            placeholder="I am looking for...."
-            value={inputVal}
+            placeholder={placeholder}
             onChange={handelChange}
             onKeyDown={handleKeyDown}
             required

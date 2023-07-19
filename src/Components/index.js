@@ -12,6 +12,7 @@ import History from './History';
 import Bookmark from './Bookmark';
 import AnimeImageSearchLayout from './AnimeImageSearchLayout';
 import UpcomingSeason from './UpcomingSeason';
+import ShowAd from './ShowAd';
 export {
   Card,
   Error404,
@@ -27,4 +28,5 @@ export {
   Bookmark,
   AnimeImageSearchLayout,
   UpcomingSeason,
+  ShowAd,
 };
