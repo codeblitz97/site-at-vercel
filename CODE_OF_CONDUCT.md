@@ -1,3 +1,6 @@
+
+#vercel redeploy
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
